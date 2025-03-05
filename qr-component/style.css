@@ -1,0 +1,149 @@
+@layer reset {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+    html {
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+
+    /* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+    [role="list"] {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-block-size: 100vh;
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    button,
+    input,
+    label {
+        line-height: 1.1;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-wrap: balance;
+    }
+
+    p,
+    li {
+        text-wrap: pretty;
+    }
+
+    img,
+    picture {
+        max-inline-size: 100%;
+        display: block;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+}
+
+@layer base {
+    :root {
+        /*Colors*/
+        --clr-white: hsl(0, 0%, 100%);
+        --clr-slate-300: hsl(212, 45%, 89%);
+        --clr-slate-500: hsl(216, 15%, 48%);
+        --clr-slate-900: hsl(218, 44%, 22%);
+
+        /*Typography*/
+        --ff-outfit: 'Outfit', sans-serif;
+        --fs-400: 1rem;
+        --fs-600: 1.375rem;
+        --fw-800: 800;
+
+        /*Spacing*/
+        --space-200: 1rem;
+        --space-300: 1.5rem;
+        --space-500: 2.5rem;
+
+        /*Border Radius*/
+        --br-1: .625rem;
+        --br-2: 1.25rem;
+
+        --card-width: 320px;
+    }
+
+
+    body {
+        font-family: var(--ff-outfit);
+        font-size: var(--fs-400);
+        background-color: var(--clr-slate-300);
+        color: var(--clr-slate-500);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: var(--br-1);
+    }
+
+    h1 {
+        font-size: var(--fs-600);
+        font-weight: var(--fw-800);
+        color: var(--clr-slate-900);
+    }
+}
+
+
+@layer components {
+    .card {
+        background-color: var(--clr-white);
+        border-radius: var(--br-2);
+        width: var(--card-width);
+        padding: var(--space-300) var(--space-300) var(--space-500);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-200);
+    }
+
+}
+
+@layer utilities {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
