@@ -22,7 +22,7 @@ This is a solution to the [QR Code Component on Frontend Mentor](https://www.fro
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/qr-code-component-ZlWXPZiTuz)
-- Live Site URL: [Live Site at Vercel](https://thenameiswiiwin.github.io/fem-qr-componet/)
+- Live Site URL: [Live Site at GitHub Pages](https://thenameiswiiwin.github.io/fem-qr-componet/)
 
 
 ## My process
@@ -40,7 +40,3 @@ This is a solution to the [QR Code Component on Frontend Mentor](https://www.fro
 ## Author
 - Github - [thenameiswiiwin](https://github.com/thenameiswiiwin/fem-qr-componet)
 - Frontend Mentor - [@thenameiswiiwin](https://www.frontendmentor.io/profile/thenameiswiiwin)
-
-
-
-
